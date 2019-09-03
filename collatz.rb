@@ -2,7 +2,7 @@
 def collatz(n)
   sequence = []
   until n == 1
-    if n%2 != 0 
+    if n % 2 != 0 
         n = 3 * n + 1
         sequence.push(n)
       else
@@ -28,7 +28,5 @@ def iterator
     puts "Starting number is #{current_longest_sequence[0]}.  
     Sequence length is #{current_longest_sequence.length}"
 end
-
-collatz(1)
 
 iterator
