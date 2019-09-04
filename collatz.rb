@@ -15,7 +15,7 @@ end
 
 def iterator
   counter = 1
-  current_longest_sequence = []
+  longest_sequence = []
   until counter == 1000000
     seq = collatz(counter)
     if seq.length > current_longest_sequence.length
@@ -25,8 +25,8 @@ def iterator
       counter+=1
     end
   end
-    puts "Starting number is #{current_longest_sequence[0]}.  
-    Sequence length is #{current_longest_sequence.length}"
+    puts "The tarting number is #{current_longest_sequence[0]} and the 
+    longest one is #{current_longest_sequence.length}"
 end
 
 iterator
